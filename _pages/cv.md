@@ -11,35 +11,23 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Computer Science and Technology, Xiamen University, 2016  
+* M.S. in Computer Software and Theory, Xiamen University, 2009
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Spring 2019 – Present: Lecturer  
+  * Minjiang University  
+  * Duties include: Teaching computer science courses, advising student research, and conducting research in robust
+  * estimation and geometric model fitting.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Spring 2017 – Spring 2019: Postdoctoral Research Fellow 
+  * Fujian Agriculture and Forestry University  
+  * Duties included: Research on multi-model fitting algorithms and participation in National Natural Science Foundation projects.
   
-Skills
+Research direction
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Computer Vision and Pattern Recognition
 
 Publications
 ======
@@ -47,7 +35,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Patents
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
