@@ -1,10 +1,12 @@
 ---
 permalink: /
-layout: splash
+title: "Personal Profile"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+seo:
+  title: "Taotao Lai(赖桃桃)"
 ---
 
 <h1>Personal Profile</h1>
