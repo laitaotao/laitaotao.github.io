@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Lai Taotao"
+title                    : "Taotao Lai(赖桃桃)"
 title_separator          : "-"
 name                     : &name "laitaotao"
 description              : &description "Doctor of Xiamen University"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -24,7 +24,7 @@ repository               : "laitaotao/laitaotao.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Lai Taotao"
+  name             : "Taotao Lai(赖桃桃)"
   pronouns         : # example: "she/her"  
   bio              : "赖桃桃，福建省高层次B类人才，厦门大学博士。长期从事人工智能，特别是计算机视觉方向的研究；在研国家自然科学基金面上项目。悉心指导学生，已在CCF A类会议、中科院一区期刊等顶级平台发表多篇高水平学术论文。"
   location         : "Fujian, China"
