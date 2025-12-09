@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "Taotao Lai(赖桃桃)"
 author_profile: true
 redirect_from: 
   - /about/
