@@ -37,8 +37,11 @@ Publications
   
 Patents
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
+  <ul>{% for patent in site.patents reversed %}
+  <li>
+    {{ patent.authors | join: ", " }}. "{{ patent.title }}." 
+    Chinese Patent {{ patent.patent_number }}.
+  </li>
   {% endfor %}</ul>
   
 Teaching
