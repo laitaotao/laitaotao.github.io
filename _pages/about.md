@@ -5,11 +5,8 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-seo:
-  title: "Taotao Lai(赖桃桃)"
 ---
 
-<h1>Personal Profile</h1>
 Lai Taotao, a high-level B-class talent in Fujian Province, holds a doctorate from Xiamen University. Long-term engaged in research on artificial intelligence, especially in the field of computer vision; Ongoing National Natural Science Foundation of China General Program. I have carefully guided students and have published many high-level academic papers in top platforms such as CCF Class A conferences and first-class journals of the Chinese Academy of Sciences.
 
 # Honorary Award
