@@ -18,7 +18,13 @@ url                      : "https://laitaotao.github.io" # The base hostname & p
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "laitaotao/laitaotao.github.io"
 
-
+navigation:
+  - title: "Publications"
+    permalink: /publications/
+  - title: "Teaching"
+    permalink: /teaching/
+  - title: "CV"
+    permalink: /cv/
 
     
 # Site Author - The following control what appear as part of the author content on the side bar.
