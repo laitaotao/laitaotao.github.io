@@ -1,7 +1,7 @@
 ---
 title: "Accelerated Guided Sampling for Multi-Structure Model Fitting"
 authors:
-  - Lai, T.*
+  - Lai, T.
   - Wang, H.
   - Yan, Y.
   - Chin, T.-J.

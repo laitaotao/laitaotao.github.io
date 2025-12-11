@@ -1,7 +1,7 @@
 ---
 title: "Efficient Sampling Using Feature Matching and Variable Minimal Structure Size"
 authors:
-  - Lai, T.*
+  - Lai, T.
   - Sadri, A.
   - Lin, S.
   - Li, Z.

@@ -1,7 +1,7 @@
 ---
 title: "Robust Model Fitting Based on Greedy Search and Specified Inlier Threshold"
 authors:
-  - Lai, T.*
+  - Lai, T.
   - Fujita, H.
   - Yang, C.
   - Li, Q.
