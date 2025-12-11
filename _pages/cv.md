@@ -28,12 +28,6 @@ Work experience
 Research direction
 ======
 * Computer Vision and Pattern Recognition
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
 Patents
 ======
@@ -50,6 +44,4 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+

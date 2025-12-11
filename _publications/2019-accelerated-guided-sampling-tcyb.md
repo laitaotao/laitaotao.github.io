@@ -1,13 +1,19 @@
 ---
-title: "Accelerated Guided Sampling for Multi-Structure Model Fitting"
+title: "Efficient Robust Model Fitting for Multi-Structure Data Using Global Greedy Search"
+authors:
+  - Lai, T.*
+  - Chen, R.
+  - Yang, C.
+  - Li, Q.
+  - Fujita, H.
+  - Sadri, A.
+  - Wang, H.
+journal: "IEEE Transactions on Cybernetics"
+year: 2020
+volume: 50
+number: 7
+pages: "3294–3306"
+arxiv: 
+code: 
 collection: publications
-category: manuscripts
-permalink: /publication/2019-accelerated-guided-sampling-tcyb/
-excerpt: 'An accelerated version of guided sampling that significantly reduces computational cost while maintaining accuracy in multi-structure scenarios.'
-date: 2019-01-11
-venue: 'GitHub Journal of Bugs'
-paperurl: 'https://laitaotao.github.io/files/papers/2019-accelerated-guided-sampling-tcyb.pdf'
-citation: 'Lai, T., Wang, H., Yan, Y., Chin, T.-J., Zheng, J., & Li, B. (2020). "Accelerated Guided Sampling for Multi-Structure Model Fitting." <i>IEEE Transactions on Cybernetics</i>, 50(10), 4530–4544.'
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.

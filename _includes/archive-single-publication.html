@@ -1,0 +1,31 @@
+<!-- _includes/archive-single-publication.html -->
+
+{% if post.year != current_year %}
+  {% unless forloop.first %}
+    </ul>
+  {% endunless %}
+  <h2>{{ post.year }}</h2>
+  <ul>
+  {% assign current_year = post.year %}
+{% endif %}
+
+<li>
+  {{ post.authors | join: ", " }}. 
+  "{{ post.title }}." 
+  {% if post.journal %}<em>{{ post.journal }}</em>{% endif %}
+  {% if post.conference %}<em>{{ post.conference }}</em>{% endif %}
+  {% if post.year %}({{ post.year }}).{% endif %}
+
+  {% if post.arxiv %}
+    {% assign arxiv_url = post.arxiv %}
+    {% unless arxiv_url contains '://' %}
+      {% assign arxiv_url = 'https://arxiv.org/abs/' | append: post.arxiv %}
+    {% endunless %}
+    [<a href="{{ arxiv_url }}">arXiv</a>]
+  {% endif %}
+
+  {% if post.code %}
+    [<a href="{{ post.code }}">Code</a>]
+  {% endif %}
+
+</li>
