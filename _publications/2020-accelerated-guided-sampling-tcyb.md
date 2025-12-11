@@ -1,5 +1,6 @@
 ---
 title: "Efficient Robust Model Fitting for Multi-Structure Data Using Global Greedy Search"
+category: manuscripts
 authors:
   - Lai, T.
   - Chen, R.

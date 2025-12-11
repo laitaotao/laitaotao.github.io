@@ -1,5 +1,6 @@
 ---
 title: "PRNet: Parallel Reinforcement Network for Two-View Correspondence Learning"
+category: manuscripts
 authors:
   - Zheng, K.
   - Lai, T.*

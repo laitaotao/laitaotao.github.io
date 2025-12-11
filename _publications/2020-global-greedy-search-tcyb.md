@@ -1,5 +1,6 @@
 ---
 title: "Accelerated Guided Sampling for Multi-Structure Model Fitting"
+category: manuscripts
 authors:
   - Lai, T.
   - Wang, H.

@@ -1,5 +1,6 @@
 ---
 title: "Efficient Sampling Using Feature Matching and Variable Minimal Structure Size"
+category: manuscripts
 authors:
   - Lai, T.
   - Sadri, A.
