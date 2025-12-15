@@ -20,4 +20,5 @@ arxiv:
 url: https://ieeexplore.ieee.org/document/8661750
 code: 
 collection: publications
+skip_index_link: true
 ---

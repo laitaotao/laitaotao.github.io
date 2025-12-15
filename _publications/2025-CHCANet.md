@@ -16,4 +16,5 @@ arxiv:
 url: https://dl.acm.org/doi/10.1145/3746027.3755581
 code: 
 collection: publications
+skip_index_link: true
 ---

@@ -18,4 +18,5 @@ arxiv:
 url: https://www.x-mol.com/paper/1611251952910417920
 code: 
 collection: publications
+skip_index_link: true
 ---
