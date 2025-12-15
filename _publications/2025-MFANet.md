@@ -16,5 +16,4 @@ arxiv:
 url: 
 code: 
 collection: publications
-skip_index_link: true
 ---

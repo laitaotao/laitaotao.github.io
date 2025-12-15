@@ -19,5 +19,4 @@ arxiv:
 url: https://www.x-mol.com/paper/959078?adv
 code: 
 collection: publications
-skip_index_link: true
 ---
