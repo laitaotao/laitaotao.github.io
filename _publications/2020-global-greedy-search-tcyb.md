@@ -16,7 +16,7 @@ pages: "4530–4540"
 image:
 pdf:
 arxiv: 
-url: "https://www.x-mol.com/paper/959078?adv"
+url: https://www.x-mol.com/paper/959078?adv
 code: 
 collection: publications
 ---

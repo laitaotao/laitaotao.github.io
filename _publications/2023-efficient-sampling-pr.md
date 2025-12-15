@@ -15,7 +15,7 @@ pages: "109311"
 image:
 pdf:
 arxiv: 
-url: "https://www.x-mol.com/paper/1611251952910417920"
+url: https://www.x-mol.com/paper/1611251952910417920
 code: 
 collection: publications
 ---

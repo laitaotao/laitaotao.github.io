@@ -17,7 +17,7 @@ pages: "3294–3306"
 image:
 pdf:
 arxiv: 
-url: "https://ieeexplore.ieee.org/document/8661750"
+url: https://ieeexplore.ieee.org/document/8661750
 code: 
 collection: publications
 ---
