@@ -6,28 +6,52 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
+<!-- Group publications by year and category -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
+  {% for category in site.publication_category %}
+    {% assign has_pub = false %}
     {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+      {% if post.category == category[0] %}
+        {% assign has_pub = true %}
+        {% break %}
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single-publication.html post=post %}
     {% endfor %}
+    {% if has_pub %}
+      <h2>{{ category[1].title }}</h2>
+      <hr />
+      {% assign pubs = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+      
+      {% assign current_year = "" %}
+      {% for post in pubs %}
+        {% if post.year != current_year %}
+          {% unless current_year == "" %}
+            </ul>
+          {% endunless %}
+          <h3>{{ post.year }}</h3>
+          <ul>
+          {% assign current_year = post.year %}
+        {% endif %}
+        {% include archive-single-publication.html post=post %}
+      {% endfor %}
+      </ul>
+    {% endif %}
   {% endfor %}
 {% else %}
+  <!-- Fallback if no categories -->
+  {% assign current_year = "" %}
   {% for post in site.publications reversed %}
+    {% if post.year != current_year %}
+      {% unless current_year == "" %}
+        </ul>
+      {% endunless %}
+      <h3>{{ post.year }}</h3>
+      <ul>
+      {% assign current_year = post.year %}
+    {% endif %}
     {% include archive-single-publication.html post=post %}
   {% endfor %}
+  </ul>
 {% endif %}
