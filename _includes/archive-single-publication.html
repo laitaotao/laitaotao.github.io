@@ -1,55 +1,62 @@
 <!-- _includes/archive-single-publication.html -->
+<!-- Self-contained publication list with year grouping, NO outer links -->
 
-{% if post.year != current_year %}
-  {% unless forloop.first %}
-    </ul>
-  {% endunless %}
-  <h2>{{ post.year }}</h2>
-  <ul>
-  {% assign current_year = post.year %}
-{% endif %}
+{% assign pub_list = include.posts | default: site.publications | sort: 'date' | reverse %}
 
-<li>
-  {% if post.image %}
-    <div style="display: flex; gap: 1em; margin-bottom: 0.5em; align-items: flex-start;">
-      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width: 120px; height: auto; border-radius: 4px;">
-      <div>
-  {% endif %}
-
-  {{ post.authors | join: ", " }}. 
-  "{{ post.title }}." 
-  {% if post.journal %}<em>{{ post.journal }}</em>{% endif %}
-  {% if post.conference %}<em>{{ post.conference }}</em>{% endif %}
-  {% if post.year %}({{ post.year }}).{% endif %}
-
-  {% if post.pdf %}
-    [<a href="{{ post.pdf | relative_url }}">PDF</a>]
-  {% endif %}
-
-  {% if post.arxiv %}
-    {% assign arxiv_url = post.arxiv %}
-    {% unless arxiv_url contains '://' %}
-      {% assign arxiv_url = 'https://arxiv.org/abs/' | append: post.arxiv %}
+{% assign current_year = "" %}
+{% for post in pub_list %}
+  {% if post.year != current_year %}
+    {% unless current_year == "" %}
+      </ul>
     {% endunless %}
-    [<a href="{{ arxiv_url }}">arXiv</a>]
+    <h2>{{ post.year }}</h2>
+    <ul>
+    {% assign current_year = post.year %}
   {% endif %}
 
-  {% if post.url %}
-    {% if post.url contains 'x-mol.com' %}
-      [<a href="{{ post.url }}">X-MOL</a>]
-    {% elsif post.url contains 'doi.org' or post.url contains 'ieee.org' or post.url contains 'springer.com' or post.url contains 'acm.org' %}
-      [<a href="{{ post.url }}">Publisher</a>]
-    {% else %}
-      [<a href="{{ post.url }}">Link</a>]
+  <li>
+    {% if post.image %}
+      <div style="display: flex; gap: 1em; margin-bottom: 0.5em; align-items: flex-start;">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width: 120px; height: auto; border-radius: 4px;">
+        <div>
     {% endif %}
-  {% endif %}
 
-  {% if post.code %}
-    [<a href="{{ post.code }}">Code</a>]
-  {% endif %}
+    {{ post.authors | join: ", " }}. 
+    "{{ post.title }}." 
+    {% if post.journal %}<em>{{ post.journal }}</em>{% endif %}
+    {% if post.conference %}<em>{{ post.conference }}</em>{% endif %}
+    {% if post.year %}({{ post.year }}).{% endif %}
 
-  {% if post.image %}
+    {% if post.pdf %}
+      [<a href="{{ post.pdf | relative_url }}">PDF</a>]
+    {% endif %}
+
+    {% if post.arxiv %}
+      {% assign arxiv_url = post.arxiv %}
+      {% unless arxiv_url contains '://' %}
+        {% assign arxiv_url = 'https://arxiv.org/abs/' | append: post.arxiv %}
+      {% endunless %}
+      [<a href="{{ arxiv_url }}">arXiv</a>]
+    {% endif %}
+
+    {% if post.url %}
+      {% if post.url contains 'x-mol.com' %}
+        [<a href="{{ post.url }}">X-MOL</a>]
+      {% elsif post.url contains 'doi.org' or post.url contains 'ieee.org' or post.url contains 'springer.com' or post.url contains 'acm.org' %}
+        [<a href="{{ post.url }}">Publisher</a>]
+      {% else %}
+        [<a href="{{ post.url }}">Link</a>]
+      {% endif %}
+    {% endif %}
+
+    {% if post.code %}
+      [<a href="{{ post.code }}">Code</a>]
+    {% endif %}
+
+    {% if post.image %}
+        </div>
       </div>
-    </div>
-  {% endif %}
-</li>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
