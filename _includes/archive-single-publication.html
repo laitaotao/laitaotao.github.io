@@ -26,13 +26,14 @@
     [<a href="{{ arxiv_url }}">arXiv</a>]
   {% endif %}
 
-  {% if include.post.url %}
-    {% if include.post.url contains 'x-mol.com' %}
-      [<a href="{{ include.post.url }}" target="_blank">X-MOL</a>]
-    {% elsif include.post.url contains 'doi.org' or include.post.url contains 'ieee.org' or include.post.url contains 'springer.com' or include.post.url contains 'acm.org' %}
-      [<a href="{{ include.post.url }}" target="_blank">Publisher</a>]
+  {% if include.post.external_url %}
+    {% assign pub_url = include.post.external_url %}
+    {% if pub_url contains 'x-mol.com' %}
+      [<a href="{{ pub_url }}" target="_blank">X-MOL</a>]
+    {% elsif pub_url contains 'doi.org' or pub_url contains 'ieee.org' or pub_url contains 'springer.com' or pub_url contains 'acm.org' %}
+      [<a href="{{ pub_url }}" target="_blank">Publisher</a>]
     {% else %}
-      [<a href="{{ include.post.url }}" target="_blank">Link</a>]
+      [<a href="{{ pub_url }}" target="_blank">Link</a>]
     {% endif %}
   {% endif %}
 

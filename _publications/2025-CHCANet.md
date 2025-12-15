@@ -12,8 +12,6 @@ year: 2025
 pages: "8577-8585"
 image: "/images/publications/CHCANet.png"
 pdf: "/files/papers/CHCANet.pdf"
-arxiv: 
 url: https://dl.acm.org/doi/10.1145/3746027.3755581
-code: 
 collection: publications
 ---

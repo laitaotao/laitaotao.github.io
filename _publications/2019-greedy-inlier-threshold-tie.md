@@ -12,10 +12,6 @@ year: 2019
 volume: 66
 number: 10
 pages: "7956–7966"
-image:
-pdf:
-arxiv: 
 url: https://www.x-mol.com/paper/902028
-code: 
 collection: publications
 ---

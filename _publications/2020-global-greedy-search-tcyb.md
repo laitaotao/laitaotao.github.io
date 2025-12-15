@@ -13,10 +13,6 @@ year: 2020
 volume: 50
 number: 10
 pages: "4530–4540"
-image:
-pdf:
-arxiv: 
 url: https://www.x-mol.com/paper/959078?adv
-code: 
 collection: publications
 ---

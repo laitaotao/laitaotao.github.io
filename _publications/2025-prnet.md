@@ -11,10 +11,6 @@ journal: "Knowledge-Based Systems"
 year: 2025
 volume: 310
 pages: "112978"
-image:
-pdf:
-arxiv: 
-url: https://www.x-mol.com/paper/1879428966843351040
-code: 
+external_url: https://www.x-mol.com/paper/1879428966843351040
 collection: publications
 ---
