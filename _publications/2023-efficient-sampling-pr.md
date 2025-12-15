@@ -12,6 +12,6 @@ journal: "Pattern Recognition"
 year: 2023
 volume: 137
 pages: "109311"
-url: https://www.x-mol.com/paper/1611251952910417920
+external_url: https://www.x-mol.com/paper/1611251952910417920
 collection: publications
 ---

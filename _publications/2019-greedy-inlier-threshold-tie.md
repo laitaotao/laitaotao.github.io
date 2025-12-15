@@ -12,6 +12,6 @@ year: 2019
 volume: 66
 number: 10
 pages: "7956–7966"
-url: https://www.x-mol.com/paper/902028
+external_url: https://www.x-mol.com/paper/902028
 collection: publications
 ---

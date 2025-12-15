@@ -14,6 +14,6 @@ year: 2020
 volume: 50
 number: 7
 pages: "3294–3306"
-url: https://ieeexplore.ieee.org/document/8661750
+external_url: https://ieeexplore.ieee.org/document/8661750
 collection: publications
 ---
