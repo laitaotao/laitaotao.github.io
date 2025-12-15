@@ -10,11 +10,21 @@
 {% endif %}
 
 <li>
+  {% if post.image %}
+    <div style="display: flex; gap: 1em; margin-bottom: 0.5em; align-items: flex-start;">
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width: 120px; height: auto; border-radius: 4px;">
+      <div>
+  {% endif %}
+
   {{ post.authors | join: ", " }}. 
   "{{ post.title }}." 
   {% if post.journal %}<em>{{ post.journal }}</em>{% endif %}
   {% if post.conference %}<em>{{ post.conference }}</em>{% endif %}
   {% if post.year %}({{ post.year }}).{% endif %}
+
+  {% if post.pdf %}
+    [<a href="{{ post.pdf | relative_url }}">PDF</a>]
+  {% endif %}
 
   {% if post.arxiv %}
     {% assign arxiv_url = post.arxiv %}
@@ -24,8 +34,22 @@
     [<a href="{{ arxiv_url }}">arXiv</a>]
   {% endif %}
 
+  {% if post.url %}
+    {% if post.url contains 'x-mol.com' %}
+      [<a href="{{ post.url }}">X-MOL</a>]
+    {% elsif post.url contains 'doi.org' or post.url contains 'ieee.org' or post.url contains 'springer.com' or post.url contains 'acm.org' %}
+      [<a href="{{ post.url }}">Publisher</a>]
+    {% else %}
+      [<a href="{{ post.url }}">Link</a>]
+    {% endif %}
+  {% endif %}
+
   {% if post.code %}
     [<a href="{{ post.code }}">Code</a>]
   {% endif %}
 
+  {% if post.image %}
+      </div>
+    </div>
+  {% endif %}
 </li>
