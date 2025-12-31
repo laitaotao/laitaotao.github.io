@@ -1,15 +1,16 @@
 ---
-title: "Outlier Removal Based on Motion Filtering and Adjustment"
+title: "基于运动过滤和调整的离群点移除"
 category: manuscripts
 authors:
-  - Taotao Lai
-  - Yifan Zhang
-  - Zuoyong Li
-  - Guobao Xiao
-  - Weisi Lin
-  - Hanzi Wang
-journal: "Acta Automatica Sinica"
+  - 赖桃桃
+  - 张一凡
+  - 李佐勇
+  - 肖国宝
+  - 林维斯
+  - 王菡子
+journal: "自动化学报"
 year: 2025
-image: "/images/publications/MFANet.png"
+external_url: https://www.aas.net.cn/cn/article/doi/10.16383/j.aas.c250235
+code: https://github.com/WallofWonder/MFANet
 collection: publications
 ---
